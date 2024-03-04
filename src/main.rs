@@ -1,10 +1,8 @@
-mod pattern_matching;
-mod structs;
+mod data_types;
 mod lifetimes;
+mod collections;
 
 fn main() {
-    println!("Hello, world!");
-    pattern_matching::start();
-    structs::start();
+    data_types::run_data_types();
     lifetimes::start();
 }

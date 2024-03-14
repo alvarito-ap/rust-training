@@ -34,12 +34,12 @@ fn send_messages() {
     let ms5 = Message::ChangeColor(8, 88, 99);
     let ms6 = Message::Introduce(Person{age: 18, name: String::from("Alvaro")});
 
-    crate::pattern_matching::handle_messages(ms1);
-    crate::pattern_matching::handle_messages(ms2);
-    crate::pattern_matching::handle_messages(ms3);
-    crate::pattern_matching::handle_messages(ms4);
-    crate::pattern_matching::handle_messages(ms5);
-    crate::pattern_matching::handle_messages(ms6);
+    crate::data_types::pattern_matching::handle_messages(ms1);
+    super::pattern_matching::handle_messages(ms2);
+    super::pattern_matching::handle_messages(ms3);
+    super::pattern_matching::handle_messages(ms4);
+    super::pattern_matching::handle_messages(ms5);
+    super::pattern_matching::handle_messages(ms6);
 }
 
 fn handle_messages(message: Message) {
